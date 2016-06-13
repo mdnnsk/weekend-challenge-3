@@ -3,20 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title>Weekend Challenge 3</title>
+    <script src="vendors/jquery-2.2.3.min.js" charset="utf-8"></script>
+    <script src= "scripts/script.js" type="text/javascript"></script>
   </head>
   <body>
     <h1>783 C41CU147012</h1>
-    <form class="" action="index.html" method="post">
-      <input type="text" name="firstVar" value="">
-      <input type="text" name="secondVar" value="">
-      <select class="math" name="math">
-        <option value = "add">Addition</option>
-        <option value = "sub">Subtraction</option>
-        <option value = "mul">Multiplication</option>
-        <option value = "div">Division</option>
-      </select>
-      <input type="button" name="submit" value="CALCULATE!">
-      <input type="button" name="reset" value="RESET">
-    </form>
+    <div class = "main">
+      <form class="objectIn" action="/math" method="post">
+        <input type="text" name="firstVar" id="firstVar" value="">
+        <input type="text" name="secondVar" id="secondVar" value="">
+        <select class="math" name="math">
+          <option value = "add" id="add">Addition</option>
+          <option value = "sub" id="sub">Subtraction</option>
+          <option value = "mul" id="mul">Multiplication</option>
+          <option value = "div" id="div">Division</option>
+        </select>
+        <input type="button" name="submit" id="submit" value="CALCULATE!">
+        <input type="button" name="reset" id="reset" value="RESET">
+      </form>
+    </div>
+    <div class="answer">
+    </div>
+
   </body>
 </html>
