@@ -9,10 +9,9 @@
   <body>
     <h1>783 C41CU147012</h1>
     <div class = "main">
-      <form class="objectIn" action="/math" method="post">
         <input type="text" name="firstVar" id="firstVar" value="">
         <input type="text" name="secondVar" id="secondVar" value="">
-        <select class="math" name="math">
+        <select class="operation" name="operation" id="operation">
           <option value = "add" id="add">Addition</option>
           <option value = "sub" id="sub">Subtraction</option>
           <option value = "mul" id="mul">Multiplication</option>
@@ -20,10 +19,9 @@
         </select>
         <input type="button" name="submit" id="submit" value="CALCULATE!">
         <input type="button" name="reset" id="reset" value="RESET">
-      </form>
     </div>
-    <div class="answer">
-    </div>
+
+    <div class="outputDiv"></div>
 
   </body>
 </html>

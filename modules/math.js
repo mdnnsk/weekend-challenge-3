@@ -1,19 +1,21 @@
-var answer = function (objectIn) {
-  if (objectIn.math == "add") {
-    return Number(objectIn.firstVar) + Number(objectIn.secondVar);
+var answer = function (objectIn){
+  // console.log('object in math module ' + objectIn);
+  var calculation;
+  if (objectIn.operation == "add") {
+    calculation = Number(objectIn.x) + Number(objectIn.y);
   }
-  else if(objectIn.math == "sub") {
-    return Number(objectIn.firstVar) - Number(objectIn.secondVar);
+  else if(objectIn.operation == "sub") {
+    calculation = Number(objectIn.x) - Number(objectIn.y);
   }
-  else if(objectIn.math == "mul") {
-    return Number(objectIn.firstVar) * Number(objectIn.secondVar);
+  else if(objectIn.operation == "mul") {
+    calculation = Number(objectIn.x) * Number(objectIn.y);
   }
-  else if(onjectIn.math == "div") {
-    return Number(objectIn.firstVar) / Number(objectIn.secondVar);
+  else if(objectIn.operation == "div") {
+    calculation = Number(objectIn.x) / Number(objectIn.y);
   }
-  else {
-    return "DO YOU EVEN MATH?!";
-  }
+
+  // console.log('result in module: ' + calculation);
+  return calculation;
 };
 
 module.exports = answer;
